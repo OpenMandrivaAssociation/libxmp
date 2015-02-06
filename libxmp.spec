@@ -5,7 +5,7 @@
 Name:		libxmp
 Summary:	Extended Module Player Library
 Version:	4.2.5
-Release:	1
+Release:	2
 # most of the source is LGPLv2+, exceptions:
 # src/filter.c: MIT
 # src/md5.*: Public domain
