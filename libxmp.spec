@@ -57,11 +57,11 @@ mv docs/Changelog docs/Changelog.old
 iconv -f ISO-8859-1 -t UTF-8 -o docs/Changelog docs/Changelog.old
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # man page
 install -Dpm644 docs/libxmp.3 %{buildroot}%{_mandir}/man3/libxmp.3
@@ -79,5 +79,6 @@ chmod 755 %{buildroot}%{_libdir}/libxmp.so.*
 %{_includedir}/xmp.h
 %{_libdir}/libxmp.so
 %{_libdir}/pkgconfig/libxmp.pc
+%{_libdir}/cmake/libxmp/
 %{_mandir}/man3/libxmp.3.*
 
