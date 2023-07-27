@@ -17,6 +17,7 @@ License:	BSD and LGPLv2+ and MIT and Public Domain
 Group:		System/Libraries
 Url:		http://xmp.sourceforge.net/
 Source0:	http://download.sourceforge.net/xmp/%{name}-%{version}.tar.gz
+BuildRequires:  locales-extra-charsets
 
 %description
 Libxmp is a library that renders module files to PCM data. It supports
