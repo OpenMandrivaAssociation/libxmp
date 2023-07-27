@@ -4,7 +4,7 @@
 
 Name:		libxmp
 Summary:	Extended Module Player Library
-Version:	4.4.1
+Version:	4.6.0
 Release:	1
 # most of the source is LGPLv2+, exceptions:
 # src/filter.c: MIT
@@ -17,6 +17,7 @@ License:	BSD and LGPLv2+ and MIT and Public Domain
 Group:		System/Libraries
 Url:		http://xmp.sourceforge.net/
 Source0:	http://download.sourceforge.net/xmp/%{name}-%{version}.tar.gz
+BuildRequires:  locales-extra-charsets
 
 %description
 Libxmp is a library that renders module files to PCM data. It supports
@@ -56,11 +57,11 @@ mv docs/Changelog docs/Changelog.old
 iconv -f ISO-8859-1 -t UTF-8 -o docs/Changelog docs/Changelog.old
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # man page
 install -Dpm644 docs/libxmp.3 %{buildroot}%{_mandir}/man3/libxmp.3
@@ -78,5 +79,6 @@ chmod 755 %{buildroot}%{_libdir}/libxmp.so.*
 %{_includedir}/xmp.h
 %{_libdir}/libxmp.so
 %{_libdir}/pkgconfig/libxmp.pc
+%{_libdir}/cmake/libxmp/
 %{_mandir}/man3/libxmp.3.*
 
