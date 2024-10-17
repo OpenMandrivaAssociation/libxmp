@@ -15,7 +15,7 @@ Release:	1
 # src/depackers/unzoo.c: MIT
 License:	BSD and LGPLv2+ and MIT and Public Domain
 Group:		System/Libraries
-Url:		http://xmp.sourceforge.net/
+Url:		https://xmp.sourceforge.net/
 Source0:	http://download.sourceforge.net/xmp/%{name}-%{version}.tar.gz
 BuildRequires:  locales-extra-charsets
 
