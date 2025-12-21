@@ -17,6 +17,11 @@ License:	BSD and LGPLv2+ and MIT and Public Domain
 Group:	Sound
 Url:		https://xmp.sourceforge.net/
 Source0:	http://download.sourceforge.net/xmp/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:		locales-extra-charsets
 
 %description
