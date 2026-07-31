@@ -4,7 +4,7 @@
 
 Summary:	Extended Module Player Library
 Name:	libxmp
-Version:	4.6.3
+Version:	4.7.2
 Release:	1
 # most of the source is LGPLv2+, exceptions:
 # src/filter.c: MIT
